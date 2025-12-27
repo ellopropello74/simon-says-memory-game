@@ -1,0 +1,154 @@
+body {
+    font-family: "Mountains of Christmas", serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 1px solid black;
+    margin: 1rem;
+    flex: 1;
+}
+
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-one,
+.line-two {
+    display: flex;
+}
+
+.yellow{
+    background-color: #eee60e;
+}
+.red{
+    background-color: #e72424;
+}
+.purple{
+    background-color: #911cb9;
+}
+.green{
+    background-color: #3cc778;
+}
+.flash{
+    background-color: white;
+}
+
+.userflash {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(179, 187, 182, 0.8);
+}
+
+
+.red:hover {
+    box-shadow: 0 10px 25px rgba(202, 63, 117, 0.5);
+}
+
+.yellow:hover {
+    box-shadow: 0 10px 25px rgba(240, 199, 64, 0.5);
+}
+
+.green:hover {
+    box-shadow: 0 10px 25px rgba(34, 230, 168, 0.5);
+}
+
+.purple:hover {
+    box-shadow: 0 10px 25px rgba(122, 144, 244, 0.5);
+}
+
+.highscore i{
+    font-size: 30px;
+}
+
+.how-to-play {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.how-to-play i {
+    font-size: 18px;
+    color: #333;
+}
+
+.how-to-play:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .highscore h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 80px;
+        width: 80px;
+        margin: 0.3rem;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .highscore h1 {
+        font-size: 18px;
+    }
+}
